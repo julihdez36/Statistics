@@ -36,3 +36,7 @@ np.diag([1,2,3])  # construct a diagonal array.
 np.diag([1,2,3],2) 
 
 np.diag(a2D) #Extract a diagonal array.
+
+# Vandermonde matrix
+
+np.vander(np.linspace(0, 2, 5), 2)
