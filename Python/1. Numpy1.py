@@ -26,6 +26,16 @@ np. arange(1,20,2) #start, stop, step
 
 np.linspace(0,2,9) # start, stop, num
 
+# Linspace is useful when you can evaluate a function
+
+x = np.linspace(0, 2*np.pi,100)
+f = np.sin(x)
+
+import matplotlib.pyplot as plt
+
+plt.plot(f)
+
+
 # 2D arrya creation
 
 np.eye(2) # Identity matrix
@@ -48,14 +58,17 @@ np.random.default_rng(42).random((2,3,2)) # 3 dimensions
 np.indices((3,3))
 
 
-# Linspace is useful when you can evaluate a function
+# Joining routines
 
-x = np.linspace(0, 2*np.pi,100)
-f = np.sin(x)
+A1 = np.ones([2,2])
+A2 = np.ones([2,2])*2
+A3 = np.ones([2,2])*3
+A4 = np.ones([2,2])*4
 
-import matplotlib.pyplot as plt
 
-plt.plot(f)
+np.block([[A1,A2],
+         [A3,A4]])
+
 
 ####### More important attributes of an ndarray #######
 
@@ -68,27 +81,7 @@ a.size # Total number of elements
 a.dtype # type of element of the array
 
 
-####### More important attributes of an ndarray #######
 
-# Arithmetic operators on arrays apply elementwise
-
-a = np.linspace(1,10,4)
-b = np.arange(4)
-
-a - b, a+b, a*b, a//b
-
-b *=a # Operation to modify an existing array
-
-# Matriz operations
-
-A = np.array([[1, 1],
-              [0, 1]])
-B = np.array([[2, 0],
-              [3, 4]])
-
-A@B # Matriz product
-
-A.dot(B) # Another way to do a matrix product
 
 
 
