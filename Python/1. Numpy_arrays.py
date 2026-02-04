@@ -74,7 +74,7 @@ np.block([[A1,A2],
 
 a.ndim # number of axes or dimensions
 
-a.shape #dimensions of the arrat. This is a tuple of integers
+a.shape #dimensions of the array. This is a tuple of integers
 
 a.size # Total number of elements
 
