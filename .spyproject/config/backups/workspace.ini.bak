@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['Python\\1. Numpy_arrays.py', 'Python\\1. Numpy_indexing.py']
+recent_files = ['Python\\1. np_arrays.py', 'Python\\2. np_indexing.py', 'Python\\3. np_broadcasting.py']
 
 [main]
 version = 0.2.0
