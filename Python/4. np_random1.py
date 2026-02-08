@@ -45,9 +45,22 @@ random.normal(loc = 1, scale = .5, size = 10)
 
 import matplotlib.pyplot as plt
 
-for i in [50,100000]:
+for i in [100000, 50]:
     A = random.normal(size = i)
     plt.hist(A, alpha = .5, density = True, label = f'{i} elements')
 plt.legend()
 plt.grid(linestyle = '--')
 plt.show()
+
+# Other probability distributions
+
+random.binomial(n=1000,p=0.5,size=10000)
+
+random.poisson(lam=10,size=1000)
+
+random.uniform(110,size=(100))
+
+logis = random.logistic(loc=1,scale=2,size=1000)
+plt.hist(logis)
+
+random.exponential(scale=0.1,size=100)
