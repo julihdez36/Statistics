@@ -20,7 +20,7 @@ def simula_port(inicial,rt,vl,t,s):
     plt.title('Portafolio de inversión vía MonteCarlo')
     plt.xlabel(r'Año')
     plt.ylabel('Valor ($)')
-    plt.grid(True)
+    plt.grid(linestyle = '--')
 
     mejor_caso=valor_port.max(axis=1)[-1]
     peor_caso=valor_port.min(axis=1)[-1]
