@@ -50,8 +50,13 @@ cobweb(r = 2.5,T = T,f = f)
 # Grafiquemos ahora el sistema dinámico
 
 x = [.05]
-r = 1.5
+r = 4
 for i in range(100):
     x.append(f(r,x[-1]))
 
-plt.plot(x,'.')
+plt.plot(x)
+
+# Notemos como emerge el caos, que aun sigue siendo determinista
+
+
+        
