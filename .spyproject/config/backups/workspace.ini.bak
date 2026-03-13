@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['Python\\6. Aprox_pi.py', 'Python\\7. simulacion_financiera.py', 'Python\\Large numbers.py', 'Python\\central limit.py', 'Python\\monte_carlo.py']
+recent_files = ['Python\\Aprox_pi.py', 'Python\\monte_carlo.py', 'Python\\7. probability paradoxes.py']
 
 [main]
 version = 0.2.0
